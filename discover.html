@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Real Coffee, Near Holy Angel University</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="media/coffeelogo.ico">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <header class="navbar">
+        <!-- Desktop and Mobile Layout -->
+        <div class="logo">
+            <img src="media/coffeelogo.png" alt="Logo">
+        </div>
+
+        <!-- Hamburger Menu for Mobile -->
+        <div class="hamburger-menu mobile">
+            <a class="menu-icon" onclick="toggleMenu()">
+                <div>&#9776;</div> <!-- Hamburger Icon -->
+            </a>
+        </div>
+
+        <!-- Hidden Navigation Menu for Mobile -->
+        <nav class="nav-links mobile" id="mobile-menu">
+            <div class="close-btn" onclick="toggleMenu()">×</div> <!-- Close Button -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Desktop Layout -->
+        <div class="search-bar tablet-desktop">
+            <input type="text" placeholder="Search...">
+        </div>
+        <nav class="nav-links tablet-desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Overlay Section (Hero) -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>timeless cafés</h1>
+            <h1>for you to discover</h1>
+        </div>
+    </section>
+
+    <div class="main-content">
+        <!-- Featured Section -->
+        <section id="featured-cafe">
+            <div class="cafe-item">
+                <a href="huan.html">
+                    <img src="media/huan.jfif" alt="Huan Cafe" class="shape" />
+                    <h3>Huan Cafe</h3>
+                </a>
+            </div>
+
+            <div class="cafe-item">
+                <a href="singku.html">
+                    <img src="media/singku.jpg" alt="Singku Cafe" class="shape" />
+                    <h3>Singku Cafe</h3>
+                </a>
+            </div>
+
+            <div class="cafe-item">
+                <a href="hubspot.html">
+                    <img src="media/hub.jpg" alt="Hubspot Coffee" class="shape" />
+                    <h3>Hubspot Coffee</h3>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.facebook.com/mickoa12/" target="_blank"><img src="media/fb.png" alt="fb logo" /></a>
+            <a href="https://www.instagram.com/amekouuu_/" target="_blank"><img src="media/ig.png" alt="ig logo" /></a>
+            <a href="https://telegram.org/" target="_blank"><img src="media/tg.png" alt="tg logo" /></a>
+        </div>
+        <nav class="footer-nav">
+            <a href="https://www.facebook.com/mickoa12/" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/amekouuu_/" target="_blank">Instagram</a>
+            <a href="https://telegram.org/" target="_blank">Telegram</a>
+        </nav>
+        <p>Copyright 2024. Owned by Cafe Crawl PH</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

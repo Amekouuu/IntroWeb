@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Real Coffee, Near Holy Angel University</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="media/coffeelogo.ico">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <header class="navbar">
+        <!-- Desktop and Mobile Layout -->
+        <div class="logo">
+            <img src="media/coffeelogo.png" alt="Logo">
+        </div>
+
+        <!-- Hamburger Menu for Mobile -->
+        <div class="hamburger-menu mobile tablet">
+            <a class="menu-icon" onclick="toggleMenu()">
+                <div>&#9776;</div> <!-- Hamburger Icon -->
+            </a>
+        </div>
+
+        <!-- Hidden Navigation Menu for Mobile -->
+        <nav class="nav-links mobile" id="mobile-menu">
+            <div class="close-btn" onclick="toggleMenu()">×</div> <!-- Close Button -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Desktop Layout -->
+        <div class="search-bar tablet-desktop">
+            <input type="text" placeholder="Search...">
+        </div>
+        <nav class="nav-links tablet-desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Overlay Section (Hero) -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>discover</h1>
+            <h1>real coffee,</h1>
+            <h1>near holy angel university</h1>
+            <a href="discover.html" class="cta-button">Visit Us!</a>
+        </div>
+    </section>
+
+    <!-- Extended Info Section -->
+    <div class="extended-info-container">
+        <div class="extended-info">
+            <section class="extended-info" id="extended-info">
+                <div class="text">
+                    <section class="explore-headertext">
+                        <a href="https://www.angelescity.gov.ph/" target="_blank">Explore Angeles City</a>
+                    </section>
+                    <p>Angeles City, located in Pampanga, Philippines, is known for its vibrant culture, rich history,
+                        and booming food scene. The city is home to a variety of trendy cafes that cater to both locals
+                        and tourists. These cafes offer a mix of international flavors and local Kapampangan delicacies,
+                        creating unique culinary experiences. Whether you're looking for a quiet spot to enjoy a coffee
+                        or a chic venue to try artisanal pastries, the cafe culture in Angeles City reflects the city’s
+                        blend of modernity and tradition.</p>
+                </div>
+                <div class="video-container">
+                    <video autoplay muted controls class="extended-video">
+                        <source src="media/invideo_index.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.facebook.com/mickoa12/" target="_blank"><img src="media/fb.png" alt="fb logo" /></a>
+            <a href="https://www.instagram.com/amekouuu_/" target="_blank"><img src="media/ig.png" alt="ig logo" /></a>
+            <a href="https://telegram.org/" target="_blank"><img src="media/tg.png" alt="tg logo" /></a>
+        </div>
+        <nav class="footer-nav">
+            <a href="https://www.facebook.com/mickoa12/" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/amekouuu_/" target="_blank">Instagram</a>
+            <a href="https://telegram.org/" target="_blank">Telegram</a>
+        </nav>
+        <p>Copyright 2024. Owned by Cafe Crawl PH</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
