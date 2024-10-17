@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Real Coffee, Near Holy Angel University</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="media/coffeelogo.ico">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <header class="navbar">
+        <!-- Desktop and Mobile Layout -->
+        <div class="logo">
+            <img src="media/coffeelogo.png" alt="Logo">
+        </div>
+
+        <!-- Hamburger Menu for Mobile -->
+        <div class="hamburger-menu mobile">
+            <a class="menu-icon" onclick="toggleMenu()">
+                <div>&#9776;</div> <!-- Hamburger Icon -->
+            </a>
+        </div>
+
+        <!-- Hidden Navigation Menu for Mobile -->
+        <nav class="nav-links mobile" id="mobile-menu">
+            <div class="close-btn" onclick="toggleMenu()">×</div> <!-- Close Button -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Desktop Layout -->
+        <div class="search-bar tablet-desktop">
+            <input type="text" placeholder="Search...">
+        </div>
+        <nav class="nav-links tablet-desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <section class="main-content">
+
+        <div class="cafe-image-section">
+            <h1>Singku Cafe</h1>
+            <a href="#" onclick="openModal('media/singku_inside.jpg')"><img src="media/singku_inside.jpg"
+                    alt="Inside Singku Cafe"></a>
+            <h2>Photo courtesy of Singku Cafe</h2>
+
+
+
+            <p>Celebrating coffee and culture. With affordable drinks, relaxing atmosphere, and access to open-air via
+                rooftop, Singku Cafe brings a new, yet familiar coffee experience for you to try out!</p>
+
+
+            <!-- Divider -->
+            <hr class="social-divider">
+
+            <!-- Socials -->
+            <p class="socials"><a href="https://www.facebook.com/singku.cafe" target="_blank">Visit
+                    their Facebook page</a>
+            </p>
+            <p class="socials"><a
+                    href="https://www.instagram.com/singku.cafe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank">Visit their Instagram
+                    account</a></p>
+        </div>
+
+
+        <div class="flavors-section">
+            <h2>Try These Flavors</h2>
+            <table class="flavors-table">
+                <tr>
+                    <th>Oreo Caramel</th>
+                    <th>Oreo Matcha</th>
+                    <th>Sea Salt Matcha</th>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="openModal('media/oreo_caramel.jpg')"><img src="media/oreo_caramel.jpg"
+                                alt="Oreo Caramel"></a></td>
+                    <td><a href="#" onclick="openModal('media/oreo_matcha.jpg')"><img src="media/oreo_matcha.jpg"
+                                alt="Oreo Matcha"></a></td>
+                    <td><a href="#" onclick="openModal('media/ss_matcha.jpg')"><img src="media/ss_matcha.jpg"
+                                alt="Sea Salt Matcha"></a></td>
+                </tr>
+                <tr>
+                    <th>Cheesy Hungarian Sausage</th>
+                    <th>Fried Chicken Cutlet</th>
+                    <th>Pork Sisig</th>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="openModal('media/sausage.jpg')"><img src="media/sausage.jpg"
+                                alt="Cheesy Hungarian Sausage"></a></td>
+                    <td><a href="#" onclick="openModal('media/fc_cutlet.jpg')"><img src="media/fc_cutlet.jpg"
+                                alt="Fried Chicken Cutlet"></a></td>
+                    <td><a href="#" onclick="openModal('media/sisig.jpg')"><img src="media/sisig.jpg"
+                                alt="Pork Sisig"></a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Modal Structure for Full-Screen Image Display -->
+    <div id="image-modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-image">
+    </div>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.facebook.com/mickoa12/" target="_blank"><img src="media/fb.png" alt="fb logo" /></a>
+            <a href="https://www.instagram.com/amekouuu_/" target="_blank"><img src="media/ig.png" alt="fb logo" /></a>
+            <a href="https://telegram.org/" target="_blank"><img src="media/tg.png" alt="fb logo" /></a>
+
+        </div>
+        <nav class="footer-nav">
+            <a href="https://www.facebook.com/mickoa12/" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/amekouuu_/" target="_blank">Instagram</a>
+            <a href="https://telegram.org/" target="_blank">Telegram</a>
+        </nav>
+        <p>Copyright ©2024. Owned by Cafe Crawl PH</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
